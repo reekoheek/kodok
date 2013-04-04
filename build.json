@@ -1,0 +1,22 @@
+{
+    "paths": {
+        "vendor": "vendor",
+        "core": "core",
+        "app": "app",
+        "kodok": "core/kodok",
+        "kodok-deps": "core/kodok-deps",
+        "module": "core/plugins/module",
+        "backbone": "vendor/backbone/backbone-min",
+        "underscore": "vendor/underscore/underscore-min",
+        "jquery": "vendor/jquery/jquery-1.9.1.min",
+        "async": "vendor/async/async"
+    },
+    "shim": {
+        "backbone": {
+            "deps": [ "jquery", "underscore", "async" ]
+        }
+    },
+    "name": "app/main",
+    "out": "dist/main-min.js",
+    "optimize": "none"
+}
