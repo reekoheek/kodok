@@ -1,3 +1,5 @@
 {
-    anu: 'huer'
-};
+    "module": {
+        "el": "body > .container"
+    }
+}

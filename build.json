@@ -4,8 +4,10 @@
         "core": "core",
         "app": "app",
         "kodok": "core/kodok",
-        "kodok-deps": "core/kodok-deps",
-        "module": "core/plugins/module",
+        "mod": "core/plugins/mod",
+        "json": "core/plugins/json",
+        "config": "core/plugins/config",
+        "text": "vendor/require/plugins/text",
         "backbone": "vendor/backbone/backbone-min",
         "underscore": "vendor/underscore/underscore-min",
         "jquery": "vendor/jquery/jquery-1.9.1.min",
@@ -13,10 +15,12 @@
     },
     "shim": {
         "backbone": {
-            "deps": [ "jquery", "underscore", "async" ]
+            "deps": [ "jquery", "underscore" ]
         }
     },
     "name": "app/main",
-    "out": "dist/main-min.js",
+    "out": "build/main.js",
+    "include": "vendor/require/require",
+    "findNestedDependencies": false,
     "optimize": "none"
 }

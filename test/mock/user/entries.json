@@ -1,0 +1,20 @@
+[
+    {
+        "username": "reekoheek",
+        "password": "password",
+        "first_name": "Reeko",
+        "last_name": "Heek"
+    },
+    {
+        "username": "admin",
+        "password": "nimda",
+        "first_name": "Admin",
+        "last_name": "User"
+    },
+    {
+        "username": "ko",
+        "password": "ok",
+        "first_name": "Kurang",
+        "last_name": "Ajar"
+    }
+]

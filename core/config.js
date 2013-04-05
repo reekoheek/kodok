@@ -1,5 +1,7 @@
-define([], function() {
-    var Config = {};
+define(['config!config'], function(c) {
+    var Config = {
+        items: c
+    };
 
     Config.get = function(key) {
 
