@@ -1,5 +1,5 @@
 {
     "backend": {
-        "base_url": "test/mock/"
+        "base_url": "http://localhost/neph/public/index.php/"
     }
 }

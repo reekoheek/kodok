@@ -1,5 +1,11 @@
 {
     "module": {
-        "el": "body > .container"
+        "el": "body > div.container",
+        "views": {
+            "entries": "core/views/entries",
+            "add": "core/views/add",
+            "edit": "core/views/edit",
+            "*": "core/views/base"
+        }
     }
 }

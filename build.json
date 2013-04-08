@@ -8,7 +8,7 @@
         "json": "core/plugins/json",
         "config": "core/plugins/config",
         "text": "vendor/require/plugins/text",
-        "backbone": "vendor/backbone/backbone-min",
+        "backbone": "vendor/backbone/backbone",
         "underscore": "vendor/underscore/underscore-min",
         "jquery": "vendor/jquery/jquery-1.9.1.min",
         "async": "vendor/async/async"

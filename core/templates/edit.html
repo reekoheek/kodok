@@ -1,0 +1,11 @@
+<form>
+    <% for(var i in columns) { %>
+    <div class="row-fluid">
+        <label class="span2"><%= columns[i] %></label>
+        <input class="span10" type="text" name="<%= columns[i] %>" value="<%= data.get(columns[i]) %>" />
+    </div>
+    <% } %>
+    <div>
+        <input type="submit" class="btn" />
+    </div>
+</form>

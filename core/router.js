@@ -13,7 +13,7 @@ define(['backbone'], function() {
         _404: function() {
             // console.log(arguments.callee.caller);
             // FIXME move this to Kodok.Event method
-            $('body').html('<h1>404</h1>');
+            $('body > .container').html('<h1>404</h1>');
         },
 
         _default: function(actions) {
@@ -35,7 +35,9 @@ define(['backbone'], function() {
                 if (!router.modules[segments[0]]) return router._404();
 
                 require(['mod!' + segments.join('/')], function(Module) {
-                    Module.instance.render();
+                    Module.instance.render({
+                        segments: segments
+                    });
                 }, function() {
                     return router._404();
                 });

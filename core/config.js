@@ -4,7 +4,7 @@ define(['config!config'], function(c) {
     };
 
     Config.get = function(key) {
-
+        return Config.items[key] || null;
     };
 
     return Config;

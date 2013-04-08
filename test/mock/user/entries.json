@@ -1,17 +1,20 @@
 [
     {
+        "id": 1,
         "username": "reekoheek",
         "password": "password",
         "first_name": "Reeko",
         "last_name": "Heek"
     },
     {
+        "id": 2,
         "username": "admin",
         "password": "nimda",
         "first_name": "Admin",
         "last_name": "User"
     },
     {
+        "id": 3,
         "username": "ko",
         "password": "ok",
         "first_name": "Kurang",

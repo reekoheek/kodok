@@ -1,11 +1,39 @@
-<h1><%= V.id %></h1>
+<h1><%= V.key %></h1>
 
-<table border="1">
-    <thead>
-        <tr>
-            <th>dsa</th>
-            <th>dsa</th>
-            <th>dsa</th>
-        </tr>
-    </thead>
-</table>
+<div class="row-fluid">
+    <div class="span6">
+
+    </div>
+    <div class="span6 pull-right">
+        <div class="pull-right">
+            <a href="#!/user/add" class="btn">Add</a>
+        </div>
+    </div>
+</div>
+
+<hr/>
+
+<div class="table-container table-bordered">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <% for(var i in columns) { %>
+                <th><%= columns[i] %></th>
+                <% } %>
+                <th>&nbsp;</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for(var i in data.models) { %>
+            <tr>
+                <% for(var j in columns) { %>
+                <td><%= data.models[i].get(columns[j]) %></td>
+                <% } %>
+                <td>
+                    <a href="#!/user/edit/<%= data.models[i].get('id') %>">Edit</a>
+                </td>
+            </tr>
+            <% } %>
+        </tbody>
+    </table>
+</div>
