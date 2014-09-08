@@ -31,9 +31,7 @@ define(['core/views/base'], function(Base) {
                 Base.prototype.render.call(that, data);
 
             });
-            this.model.fetch().fail(function() {
-                this.model.off('sync');
-            });
+            this.model.fetch();
 
         }
     });

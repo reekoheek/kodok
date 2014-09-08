@@ -34,6 +34,7 @@ define([], function() {
             var C = Backbone.Collection.extend({
                 model: M,
                 parse: function(data) {
+                    if (!data) return data;
                     return data.entries;
                 },
                 url: function() {

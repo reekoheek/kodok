@@ -4,7 +4,7 @@ require(['kodok'],function(App) {
     // Backbone.emulateHTTP = true;
     // Backbone.emulateJSON = true;
 
-    app.modules([ 'home', 'user' ]);
+    app.modules([ 'home', 'user', 'module' ]);
 
     // app.route('a', function() {
     // });
